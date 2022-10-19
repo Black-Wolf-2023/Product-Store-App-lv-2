@@ -1,0 +1,73 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 50px;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+.card .bak{
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    background-color: #172327;
+    color: aliceblue;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+.card .img img{
+    width: 100%;
+    height: 100%;
+}
+.card .img span{
+    display: inline-block;
+    background-color: #172327;
+    color: aliceblue;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.card .img span[active="active"]{
+    background-color: lightblue;
+    color: #172327;
+    font-weight: bold;
+}
+.card .details{
+    background-color: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.card .details .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.card .details .info > :nth-child(2){
+    color: lightseagreen;
+}
+.card .details .dis{
+    height: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+.card .details button{
+    width: 100%;
+    border: 2px solid #172327;
+    color: #172327;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    transition: all ease .5s;
+}
+.card .details button:hover{
+    background-color: #172327;
+    color: aliceblue;
+    cursor: pointer;
+}
