@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Items } from './Items';
 import Loading from './Loading';
+import { Memo } from './Memo';
 
 export default class Home extends Component {
   state = {

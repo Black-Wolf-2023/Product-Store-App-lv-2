@@ -4,7 +4,8 @@
     padding: 50px;
     overflow: hidden;
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
+    background-color: #2948C3B3;
 }
 .card .bak{
     position: fixed;

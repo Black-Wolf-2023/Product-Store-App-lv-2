@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import "../styles/Card.css";
+import { Data } from './Context';
 
 export default function Details(prop) {
     const location = useLocation();
     const {data} = location.state;
     let [index__state,setIndex] = useState(0);
+    let pram = useContext(Data);
 
     function changer(e){
        setIndex(Number(e.target.innerText)-1)
@@ -27,7 +29,8 @@ export default function Details(prop) {
                 <span>{data.price}$</span>
             </div>
             <div className='dis'>{data.description}</div>
-            <button>ADD</button>
+            <button onClick={()=>{
+            }}>ADD</button>
         </div>
 
     </div>
